@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Exo-Regular";
+    src: url("/assets/fonts/Exo-Regular.woff") format("woff2");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.navbar{
+    width:100%;
+    padding:10px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    height:64px;
+    background-color: rgba(256,256,256, 0.5);
+}
+
+.navbarLogo{
+    width:fit-content;
+}
+
+.navbarLogo img{
+    height:64px;
+    user-select: none;
+}
+
+.navbarWrap{
+    flex-grow: 1;
+}
+
+.navbarButtons{
+    width:fit-content;
+}
+
+.navbarButtonsSignup, .navbarButtonsLogin{
+    font-size: 11pt;
+    padding:7px 15px;
+    border-radius: 5px;
+    border:0px;
+    font-family: Exo-Regular;
+}
+
+.navbarButtonsLogin{
+    background-color: lightgray;
+    color:rgb(37, 37, 37);
+}
+
+.navbarButtonsSignup{
+    margin-left:10px;
+    background-color: rgb(37, 37, 37);
+    color: lightgray;
+}
+
+.content{
+    padding-top: 84px;
+}
+
+.contentPanel{
+    width:100%;
+    height:100vh;
+    border-bottom: 1px solid #dfdfdf;
+    background-size: auto 100%;
+    background-position: center center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentPanel div{
+    width:fit-content;
+}
+
+.enterAppButton{
+    padding: 10px 20px;
+    background: linear-gradient(to top, #9800c2, #c800ff);
+    border:0px;
+    border-radius: 60px;
+    font-size:15pt;
+    font-family: Exo-Regular;
+    color: white;
+}
